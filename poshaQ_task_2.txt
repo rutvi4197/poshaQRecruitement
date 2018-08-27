@@ -1,0 +1,6 @@
+A REST API using ExpressJS and MongoDB (preferred) or equivalent for todo list app.
+
+    1. Should perform CRUD operations for todo lists, i.e, can make/ delete/ edit a label.
+
+    2. Should perform CRUD operations for tasks inside a todo list, i.e, can make/ delete/ edit a task.
+
