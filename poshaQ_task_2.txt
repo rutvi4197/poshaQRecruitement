@@ -1,6 +1,17 @@
-A REST API using ExpressJS and MongoDB (preferred) or equivalent for todo list app.
+A REST API using ExpressJS (necessary) and MongoDB (preferred) or equivalent for todo list app. This app should contain following features
+    a. Should able to create/ delete/ edit Labels i.e., "To-DO", "Do", "Doing", "Done", etc. Label is the main heading where you define what kind of tasks should appear under this kind of label.
+    b. Should able to create any number of tasks in any label
+    c. Should apply CRUD capability to task.
+    d. Should have the functionality to move task/ tasks from one label to other.
 
-    1. Should perform CRUD operations for todo lists, i.e, can make/ delete/ edit a label.
+From above features these endpoints should be running.
+    1. api/create_label
+    2. api/delete_label
+    3. api/update_label
+    4. api/create_task
+    5. api/delete_task
+    6. api/update_task
+    7. api/move_task
 
-    2. Should perform CRUD operations for tasks inside a todo list, i.e, can make/ delete/ edit a task.
-
+- Provide Database dump While you commit.
+- All endpoints will be tested using postman app.

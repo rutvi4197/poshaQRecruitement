@@ -1,0 +1,54 @@
+You have one database which have documents (minimum million documents) available in MongoDB. complete following task according to instructions.
+
+Database Schema:
+  {
+    "_id": ObjectId, // Provided by mongo bydefault, but you also can enter your own Id.
+    "category" : String // Minimum 1000 different categories
+  }
+
+Example:
+test_example = [
+  { "_id": "0", "category": "A" },
+  { "_id": "1", "category": "B" },
+  { "_id": "2", "category": "C" },
+  { "_id": "3", "category": "A" },
+  { "_id": "4", "category": "B" },
+  { "_id": "5", "category": "C" },
+  { "_id": "6", "category": "A" },
+  { "_id": "7", "category": "B" },
+  { "_id": "8", "category": "C" },
+  { "_id": "9", "category": "A" },
+  { "_id": "10", "category": "B" },
+]
+
+Steps:
+  1. Create Demo Database using MongoDB (necessary)
+  2. Write JavaScript function to achive necessary results. Use "lodash" library (necessary)
+
+Code Template:
+
+const submission = async (client, dbName, collectionName, bucketSize) => { 
+  // Use async-await and lodash to complete this task.
+  // client = Mongo server,
+  // dbName = Your database name,
+  // bucketSize = input variable, can be any integer
+  // START your Code
+    **
+    **
+  // END your code  
+};
+
+Test Case:
+
+Calling submission function with bucketSize = 2 and products = test_example
+Returns[
+  {
+    "A": [["0", "3"], ["6", "9"]],
+    "B": [["1", "4"], ["7", "10"]],
+    "C": [["2", "5"], ["8"]]
+  }
+]
+// Notice that C category's last bucket can not be filled completely.
+
+- Should push Demo Database (necessary)
+- output.js file which will have submission function.
