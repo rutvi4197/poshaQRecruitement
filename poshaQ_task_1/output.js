@@ -17,7 +17,6 @@ const submission = async (client, dbName, collectionName, bucketSize) => {
       //Get data from collection
       db.collection(collectionName, function(err, collection) {
         collection.find().toArray(function(err, data) {
-          console.log(data);
           let categoryData = {};
           data.map(arrayData => {
             categoryData[arrayData.category] = [...(categoryData[arrayData.category] || []),arrayData._id];
